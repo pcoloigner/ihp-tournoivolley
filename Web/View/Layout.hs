@@ -20,12 +20,29 @@ defaultLayout inner = H.docTypeHtml ! A.lang "en" $ [hsx|
     <title>App</title>
 </head>
 <body>
+    {navbar}
     <div class="container mt-4">
         {renderFlashMessages}
         {inner}
     </div>
 </body>
 |]
+
+navbar :: Html
+navbar = [hsx|
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <a class="navbar-nav mr-auto">Club</a>
+    <ul>
+        <li class="nav-item">
+        <a class="nav-link" href={ClubsAction}>Clubs</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={NewClubAction}>Nouveau Club</a>
+        </li>
+    </ul>
+</nav>
+|]
+
 
 stylesheets :: Html
 stylesheets = do
