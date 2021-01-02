@@ -26,3 +26,6 @@ instance AutoRoute TournoiBranchesController
 
 instance AutoRoute TournoiPoulesController
 
+
+instance AutoRoute GymnasesController
+

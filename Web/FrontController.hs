@@ -5,6 +5,7 @@ import Web.Controller.Prelude
 import Web.View.Layout (defaultLayout)
 
 -- Controller Imports
+import Web.Controller.Gymnases
 import Web.Controller.TournoiPoules
 import Web.Controller.TournoiBranches
 import Web.Controller.TournoiPhases
@@ -18,6 +19,7 @@ instance FrontController WebApplication where
     controllers = 
         [ startPage WelcomeAction
         -- Generator Marker
+        , parseRoute @GymnasesController
         , parseRoute @TournoiPoulesController
         , parseRoute @TournoiBranchesController
         , parseRoute @TournoiPhasesController

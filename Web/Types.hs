@@ -78,3 +78,13 @@ data TournoiPoulesController
     | UpdateTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
     | DeleteTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
     deriving (Eq, Show, Data)
+
+data GymnasesController
+    = GymnasesAction
+    | NewGymnaseAction
+    | ShowGymnaseAction { gymnaseId :: !(Id Gymnase) }
+    | CreateGymnaseAction
+    | EditGymnaseAction { gymnaseId :: !(Id Gymnase) }
+    | UpdateGymnaseAction { gymnaseId :: !(Id Gymnase) }
+    | DeleteGymnaseAction { gymnaseId :: !(Id Gymnase) }
+    deriving (Eq, Show, Data)
