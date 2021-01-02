@@ -88,3 +88,23 @@ data GymnasesController
     | UpdateGymnaseAction { gymnaseId :: !(Id Gymnase) }
     | DeleteGymnaseAction { gymnaseId :: !(Id Gymnase) }
     deriving (Eq, Show, Data)
+
+data PouleEquipesController
+    = PouleEquipesAction
+    | NewPouleEquipeAction
+    | ShowPouleEquipeAction { pouleEquipeId :: !(Id PouleEquipe) }
+    | CreatePouleEquipeAction
+    | EditPouleEquipeAction { pouleEquipeId :: !(Id PouleEquipe) }
+    | UpdatePouleEquipeAction { pouleEquipeId :: !(Id PouleEquipe) }
+    | DeletePouleEquipeAction { pouleEquipeId :: !(Id PouleEquipe) }
+    deriving (Eq, Show, Data)
+
+data PouleMatchsController
+    = PouleMatchsAction
+    | NewPouleMatchAction
+    | ShowPouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
+    | CreatePouleMatchAction
+    | EditPouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
+    | UpdatePouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
+    | DeletePouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
+    deriving (Eq, Show, Data)

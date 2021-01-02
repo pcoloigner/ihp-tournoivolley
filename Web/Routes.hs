@@ -29,3 +29,9 @@ instance AutoRoute TournoiPoulesController
 
 instance AutoRoute GymnasesController
 
+
+instance AutoRoute PouleEquipesController
+
+
+instance AutoRoute PouleMatchsController
+
