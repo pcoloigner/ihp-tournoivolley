@@ -118,3 +118,23 @@ data TerrainsController
     | UpdateTerrainAction { terrainId :: !(Id Terrain) }
     | DeleteTerrainAction { terrainId :: !(Id Terrain) }
     deriving (Eq, Show, Data)
+
+data MatchsController
+    = MatchsAction
+    | NewMatchAction
+    | ShowMatchAction { matchId :: !(Id Match) }
+    | CreateMatchAction
+    | EditMatchAction { matchId :: !(Id Match) }
+    | UpdateMatchAction { matchId :: !(Id Match) }
+    | DeleteMatchAction { matchId :: !(Id Match) }
+    deriving (Eq, Show, Data)
+
+data MatchSetsController
+    = MatchSetsAction
+    | NewMatchSetAction
+    | ShowMatchSetAction { matchSetId :: !(Id MatchSet) }
+    | CreateMatchSetAction
+    | EditMatchSetAction { matchSetId :: !(Id MatchSet) }
+    | UpdateMatchSetAction { matchSetId :: !(Id MatchSet) }
+    | DeleteMatchSetAction { matchSetId :: !(Id MatchSet) }
+    deriving (Eq, Show, Data)
