@@ -48,3 +48,33 @@ data EquipesController
     | UpdateEquipeAction { equipeId :: !(Id Equipe) }
     | DeleteEquipeAction { equipeId :: !(Id Equipe) }
     deriving (Eq, Show, Data)
+
+data TournoiPhasesController
+    = TournoiPhasesAction
+    | NewTournoiPhaseAction
+    | ShowTournoiPhaseAction { tournoiPhaseId :: !(Id TournoiPhase) }
+    | CreateTournoiPhaseAction
+    | EditTournoiPhaseAction { tournoiPhaseId :: !(Id TournoiPhase) }
+    | UpdateTournoiPhaseAction { tournoiPhaseId :: !(Id TournoiPhase) }
+    | DeleteTournoiPhaseAction { tournoiPhaseId :: !(Id TournoiPhase) }
+    deriving (Eq, Show, Data)
+
+data TournoiBranchesController
+    = TournoiBranchesAction
+    | NewTournoiBranchAction
+    | ShowTournoiBranchAction { tournoiBranchId :: !(Id TournoiBranch) }
+    | CreateTournoiBranchAction
+    | EditTournoiBranchAction { tournoiBranchId :: !(Id TournoiBranch) }
+    | UpdateTournoiBranchAction { tournoiBranchId :: !(Id TournoiBranch) }
+    | DeleteTournoiBranchAction { tournoiBranchId :: !(Id TournoiBranch) }
+    deriving (Eq, Show, Data)
+
+data TournoiPoulesController
+    = TournoiPoulesAction
+    | NewTournoiPouleAction
+    | ShowTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
+    | CreateTournoiPouleAction
+    | EditTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
+    | UpdateTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
+    | DeleteTournoiPouleAction { tournoiPouleId :: !(Id TournoiPoule) }
+    deriving (Eq, Show, Data)

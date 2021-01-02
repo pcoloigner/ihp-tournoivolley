@@ -17,3 +17,12 @@ instance AutoRoute PersonnesController
 
 instance AutoRoute EquipesController
 
+
+instance AutoRoute TournoiPhasesController
+
+
+instance AutoRoute TournoiBranchesController
+
+
+instance AutoRoute TournoiPoulesController
+
