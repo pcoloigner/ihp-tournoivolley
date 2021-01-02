@@ -108,3 +108,13 @@ data PouleMatchsController
     | UpdatePouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
     | DeletePouleMatchAction { pouleMatchId :: !(Id PouleMatch) }
     deriving (Eq, Show, Data)
+
+data TerrainsController
+    = TerrainsAction
+    | NewTerrainAction
+    | ShowTerrainAction { terrainId :: !(Id Terrain) }
+    | CreateTerrainAction
+    | EditTerrainAction { terrainId :: !(Id Terrain) }
+    | UpdateTerrainAction { terrainId :: !(Id Terrain) }
+    | DeleteTerrainAction { terrainId :: !(Id Terrain) }
+    deriving (Eq, Show, Data)

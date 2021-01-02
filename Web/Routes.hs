@@ -35,3 +35,6 @@ instance AutoRoute PouleEquipesController
 
 instance AutoRoute PouleMatchsController
 
+
+instance AutoRoute TerrainsController
+
