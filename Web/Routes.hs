@@ -14,3 +14,6 @@ instance AutoRoute TournoisController
 
 instance AutoRoute PersonnesController
 
+
+instance AutoRoute EquipesController
+

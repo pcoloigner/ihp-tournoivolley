@@ -38,3 +38,13 @@ data PersonnesController
     | UpdatePersonneAction { personneId :: !(Id Personne) }
     | DeletePersonneAction { personneId :: !(Id Personne) }
     deriving (Eq, Show, Data)
+
+data EquipesController
+    = EquipesAction
+    | NewEquipeAction
+    | ShowEquipeAction { equipeId :: !(Id Equipe) }
+    | CreateEquipeAction
+    | EditEquipeAction { equipeId :: !(Id Equipe) }
+    | UpdateEquipeAction { equipeId :: !(Id Equipe) }
+    | DeleteEquipeAction { equipeId :: !(Id Equipe) }
+    deriving (Eq, Show, Data)
