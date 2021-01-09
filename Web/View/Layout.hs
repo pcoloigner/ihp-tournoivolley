@@ -31,13 +31,34 @@ defaultLayout inner = H.docTypeHtml ! A.lang "en" $ [hsx|
 navbar :: Html
 navbar = [hsx|
 <nav class="navbar navbar-light bg-light navbar-expand-lg">
-    <a class="navbar-nav mr-auto">Club</a>
-    <ul>
+    <a class="navbar-brand" href="/">Application de Tournois de Volley</a>
+    <ul class="navbar-nav mr-auto">
         <li class="nav-item">
         <a class="nav-link" href={ClubsAction}>Clubs</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href={NewClubAction}>Nouveau Club</a>
+        <a class="nav-link" href={TournoisAction}>Tournois</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={GymnasesAction}>Gymnases</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={EquipesAction}>Equipes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PersonnesAction}>Personnes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={MatchsAction}>Matchs</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={TerrainsAction}>Terrains</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleEquipesAction}>Equipes de Poules</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleMatchsAction}>Matchs de Poule</a>
         </li>
     </ul>
 </nav>
