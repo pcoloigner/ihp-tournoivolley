@@ -56,4 +56,4 @@ instance Controller TournoisController where
         redirectTo TournoisAction
 
 buildTournoi tournoi = tournoi
-    |> fill @["nom","tournoiDate","niveau","tournoiType","nbEquipes","clubId"]
+    |> fill @["nom","tournoiDate","niveau","tournoiType","nbEquipes","clubId", "nbTerrains", "nbGymnases"]

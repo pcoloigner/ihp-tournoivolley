@@ -23,5 +23,7 @@ renderForm tournoi = formFor tournoi [hsx|
     {(textField #tournoiType)}
     {(textField #nbEquipes)}
     {(textField #clubId)}
+    {(textField #nbTerrains)}
+    {(textField #nbGymnases)}
     {submitButton}
 |]
