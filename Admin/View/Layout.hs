@@ -20,12 +20,54 @@ defaultLayout inner = H.docTypeHtml ! A.lang "en" $ [hsx|
     <title>App</title>
 </head>
 <body>
+    {navbar}    
     <div class="container mt-4">
         {renderFlashMessages}
         {inner}
     </div>
 </body>
 |]
+
+
+navbar :: Html
+navbar = [hsx|
+<nav class="navbar navbar-light bg-light navbar-expand-lg">
+    <a class="navbar-brand" href="/">Menu Admin</a>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+           <a class="nav-link" href={ClubsAction}>Clubs</a>
+           <!-- Clubs -->
+        </li>
+    <!-- 
+       <li class="nav-item">
+        <a class="nav-link" href={TournoisAction}>Tournois</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={GymnasesAction}>Gymnases</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={EquipesAction}>Equipes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PersonnesAction}>Personnes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={MatchsAction}>Matchs</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={TerrainsAction}>Terrains</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleEquipesAction}>Equipes de Poules</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href={PouleMatchsAction}>Matchs de Poule</a>
+        </li>
+        -->
+    </ul>
+</nav>
+|]
+
 
 stylesheets :: Html
 stylesheets = do

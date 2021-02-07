@@ -5,3 +5,5 @@ import Admin.Types
 
 -- Generator Marker
 instance AutoRoute StaticController
+
+instance AutoRoute ClubsController
