@@ -1,0 +1,16 @@
+module Admin.View.PouleMatchs.Show where
+import Admin.View.Prelude
+
+data ShowView = ShowView { pouleMatch :: PouleMatch }
+
+instance View ShowView where
+    html ShowView { .. } = [hsx|
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href={PouleMatchsAction}>PouleMatchs</a></li>
+                <li class="breadcrumb-item active">Show PouleMatch</li>
+            </ol>
+        </nav>
+        <h1>Show PouleMatch</h1>
+        <p>{pouleMatch}</p>
+    |]

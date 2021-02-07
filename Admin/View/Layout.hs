@@ -38,7 +38,7 @@ navbar = [hsx|
            <a class="nav-link" href={ClubsAction}>Clubs</a>
            <!-- Clubs -->
         </li>
-    <!-- 
+    <!--  -->
        <li class="nav-item">
         <a class="nav-link" href={TournoisAction}>Tournois</a>
         </li>
@@ -63,7 +63,7 @@ navbar = [hsx|
         <li class="nav-item">
         <a class="nav-link" href={PouleMatchsAction}>Matchs de Poule</a>
         </li>
-        -->
+    <!--  -->
     </ul>
 </nav>
 |]
